@@ -19,13 +19,12 @@ Gem::Specification.new do |gem|
   gem.files = `git ls-files`.split("\n")
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
-  gem.add_runtime_dependency 'administrate', '< 1.0.0'
-  gem.add_runtime_dependency 'rack', '~> 2.0', '>= 2.0.8'
-  gem.add_runtime_dependency 'rails', '>= 4.2', '< 8'
-  gem.add_runtime_dependency 'redcarpet', '~> 3.3'
+  gem.add_runtime_dependency 'administrate', '< 2.0.0'
+  gem.add_runtime_dependency 'rails', '>= 6.0'
+  gem.add_runtime_dependency 'redcarpet', '>= 3.5.1'
 
   gem.add_development_dependency 'overcommit', '~> 0.58'
-  gem.add_development_dependency 'rake', '~> 13.0'
+  gem.add_development_dependency 'rake', '>= 12.3.3'
   gem.add_development_dependency 'rspec', '~> 3.7'
   gem.add_development_dependency 'rubocop', '~> 1.24'
 end
